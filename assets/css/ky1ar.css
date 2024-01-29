@@ -145,6 +145,7 @@ body {
     height: 2.5rem;
     width: 2.5rem;
     cursor: pointer;
+    border: none;
 }
 /*******************************************************************/
 #ky1-ovr {
