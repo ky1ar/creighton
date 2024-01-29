@@ -85,8 +85,9 @@ $rand = $frase[array_rand($frase)];
             <div id="ky1-add-frm">
                 <div class="frm-cnt"> 
                     <div class="frm-box">
-                        <h2><img src="assets/img/lft.svg" width="16" height="16" alt="ico">Indicador</h2>
+                        <h2><img src="assets/img/lft.svg" width="16" height="16" alt="ico">Indicador</h2> 
                         <ul>
+                            
                             <li>0<span>Seco</span></li>
                             <li>2<span>Húmedo</span></li>
                             <li>4<span>Brillo</span></li>
