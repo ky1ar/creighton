@@ -144,15 +144,20 @@ $rand = $frase[array_rand($frase)];
                 <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
                 <a href="#"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></a>
             </div>
-            <ul class="lst-dat">
-            <?php
-                $sql = "SELECT id, creighton, DATE_FORMAT(DATE_SUB(r.fecha, INTERVAL 5 HOUR), '%H:%i:%s') AS hora FROM register r WHERE DATE(r.fecha) = CURDATE() ORDER BY r.fecha";
+            <form method="post">
+                <ul class="lst-dat">
+                <?php
+                    $sql = "SELECT id, creighton, DATE_FORMAT(DATE_SUB(r.fecha, INTERVAL 5 HOUR), '%H:%i:%s') AS hora FROM register r WHERE DATE(r.fecha) = CURDATE() ORDER BY r.fecha";
 
-                $result = $conn->query($sql);
-                while ($row = $result->fetch_assoc()):?>
-                    <li data-id="<?php echo $row['id'] ?>"><b><?php echo $row['creighton'] ?></b><span><?php echo $row['hora'] ?></span></li>
-                <?php endwhile; ?>
+                    $result = $conn->query($sql);
+                    while ($row = $result->fetch_assoc()):?>
+                        <li data-id="<?php echo $row['id'] ?>">
+                        <b><?php echo $row['creighton'] ?><span><?php echo $row['hora'] ?></span></b>
+                        <img src="assets/img/del.svg" width="20" height="20" alt="ico">
+                    </li>
+                    <?php endwhile; ?>
                 </ul>
+            </form>
         </div>
     </section>
 </body>
