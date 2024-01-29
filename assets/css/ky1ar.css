@@ -1,0 +1,134 @@
+/*
+Theme Name: ky1ar
+Theme URI: https://krear3d.com
+Author: Kenny Muñoz Serafin
+Author URI: https://munoz.pe
+Description: Tema personalizado para Krear 3D
+Version: 0.01
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+	--primary: #31d69d;
+	--primaryopacity: #ffeee4;
+
+	--secondary: #141918;
+	--tertiary: #212927;
+
+    --white: #ffffff;
+	--gray: #f0f0f0;
+	--graydark: #e6e6e6;
+    --graydarkest : #cccccc;
+	--black: #000000;
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+::selection {
+    color: var(--primary) !important;
+    background-color: var(--black) !important;
+}
+a {
+    text-decoration: none;
+}
+img, 
+svg {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+/*******************************************************************/
+body {
+	background-color: var(--secondary);
+    color: var(--white);
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    position: relative;
+    min-width: 22rem;
+}
+.ky1-wrp {
+	width: 100%;
+    margin: 0 auto;
+    max-width: 100rem;
+	padding: 0 1rem;
+}
+/*******************************************************************/
+#ky1-hdr {
+    padding: 1rem 0;
+}
+#ky1-hdr .ky1-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ky1-hdr .hdr-lft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#ky1-hdr .hdr-lft img {
+    border-radius: 2rem;
+}
+#ky1-hdr .hdr-txt {
+    display: flex;
+    flex-direction: column; 
+}
+#ky1-hdr .hdr-txt h1 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+#ky1-hdr .hdr-txt h2 {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 200;
+    opacity: 0.75;
+}
+#ky1-hdr .hdr-rgt {
+    display: flex;
+    gap: 1rem;
+}
+#ky1-hdr .hdr-rgt a {
+    padding: 0.5rem;
+}
+/*******************************************************************/
+#ky1-lst .lst-hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ky1-lst .lst-hdr a {
+    padding: 0.75rem;
+}
+/*******************************************************************/
+#ky1-ovr {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--black);
+    z-index: 2;
+    opacity: 0.5;
+    display: none;
+}
+#ky1-add {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: var(--primary);
+}
+
+
