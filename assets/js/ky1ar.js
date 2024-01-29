@@ -31,9 +31,9 @@ $( document ).ready(function() {
         e.preventDefault();
 
         err_msg.slideUp();
-        var ind = $('#frm-ind').val();
-        var sen = $('#frm-sen').val();
-        var clr = $('#frm-clr').val();
+        var ind = $('#frm-ind').val().toString();
+        var sen = $('#frm-sen').val().toString();
+        var clr = $('#frm-clr').val().toString();
         
         var dat = ind + sen + clr;
         $.ajax({
