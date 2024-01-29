@@ -85,9 +85,8 @@ $rand = $frase[array_rand($frase)];
             <div id="ky1-add-frm">
                 <div class="frm-cnt"> 
                     <div class="frm-box">
-                        <h2><img src="assets/img/lft.svg" width="16" height="16" alt="ico">Indicador</h2> 
+                        <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Indicador</h2> 
                         <ul>
-                            
                             <li>0<span>Seco</span></li>
                             <li>2<span>Húmedo</span></li>
                             <li>4<span>Brillo</span></li>
@@ -97,7 +96,7 @@ $rand = $frase[array_rand($frase)];
                         </ul>
                     </div>
                     <div class="frm-box box-mdl">
-                        <h2><img src="assets/img/lft.svg" width="16" height="16" alt="ico">Sensación</h2>
+                        <h2><img src="assets/img/sen.svg" width="16" height="16" alt="ico">Sensación</h2>
                         <ul>
                             <li>L<span>Lubri.</span></li>
                             <li>G<span>Gomoso</span></li>
@@ -105,7 +104,7 @@ $rand = $frase[array_rand($frase)];
                         </ul>
                     </div>
                     <div class="frm-box">
-                        <h2><img src="assets/img/lft.svg" width="16" height="16" alt="ico">Color</h2>
+                        <h2><img src="assets/img/clr.svg" width="16" height="16" alt="ico">Color</h2>
                         <ul>
                             <li>B<span>Marrón</span></li>
                             <li>C<span>Nublado</span></li>
