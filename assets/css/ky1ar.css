@@ -106,6 +106,25 @@ body {
 #ky1-lst .lst-hdr a {
     padding: 0.75rem;
 }
+#ky1-lst .lst-dat {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+#ky1-lst .lst-dat li {
+    background-color: #212525;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+#ky1-lst .lst-dat li span {
+    opacity: 0.5;
+}
 /*******************************************************************/
 #ky1-ovr {
     position: fixed;
