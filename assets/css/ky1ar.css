@@ -44,12 +44,11 @@ svg {
 }
 /*******************************************************************/
 body {
-	background-color: var(--secondary);
+    background-color: var(--secondary);
     color: var(--white);
     margin: 0;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.85rem;
-    position: relative;
     min-width: 22rem;
 }
 .ky1-wrp {
@@ -174,7 +173,8 @@ body {
 #ky1-add-frm {
     display: none;
     position: absolute;
-    top: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 3;
     padding-bottom: 1rem;
     left: 1rem;
