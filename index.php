@@ -86,33 +86,33 @@ $rand = $frase[array_rand($frase)];
                 <div class="frm-box">
                     <h2>Indicador</h2>
                     <ul>
-                        <li>0</li>
-                        <li>2</li>
-                        <li>4</li>
-                        <li>6</li>
-                        <li>8</li>
-                        <li>10</li>
+                        <li>0<span>Seco</span></li>
+                        <li>2<span>Húmedo</span></li>
+                        <li>4<span>Brillo</span></li>
+                        <li>6<span>0.5 cm</span></li>
+                        <li>8<span>2.0 cm</span></li>
+                        <li>10<span>2.5 cm</span></li>
                     </ul>
                 </div>
                 <div class="frm-box box-mdl">
                     <h2>Sensación</h2>
                     <ul>
-                        <li>L</li>
-                        <li>G</li>
-                        <li>P</li>
+                        <li>L<span>Lubricante</span></li>
+                        <li>G<span>Gomoso</span></li>
+                        <li>P<span>Pastoso</span></li>
                     </ul>
                 </div>
                 <div class="frm-box">
                     <h2>Indicador</h2>
                     <ul>
-                        <li>B</li>
-                        <li>C</li>
-                        <li>CK</li>
-                        <li>G</li>
-                        <li>K</li>
-                        <li>P</li>
-                        <li>R</li>
-                        <li>Y</li>
+                        <li>B<span>Marrón</span></li>
+                        <li>C<span>Nublado</span></li>
+                        <li>CK<span>Nub/Cla</span></li>
+                        <li>K<span>Claro</span></li>
+                        <li>G<span>Gomoso</span></li>
+                        <li>P<span>Pastoso</span></li>
+                        <li>R<span>R</span></li>
+                        <li>Y<span>Amarillo</span></li>
                     </ul>
                 </div>
                 <div class="box-fnl">
