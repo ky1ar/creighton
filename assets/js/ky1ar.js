@@ -15,6 +15,7 @@ $( document ).ready(function() {
         addForm.fadeToggle();
         $('#ky1-add-frm ul li').removeClass('sel-act');
         $('.box-fnl b').text('-');
+        err_msg.slideUp();
     });
 
     $('#ky1-add-frm ul li').click(function() {

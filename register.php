@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['dat'])) {
     $tdy = date('Y-m-d H:i:s');
     
     if (strpos($dat, '-') !== false) {
-        echo json_encode(array("success" => false, "message" => "Seleccionar."));
+        echo json_encode(array("success" => false, "message" => "Error"));
             exit();
     } else {
         $sql = "INSERT INTO register (creighton, fecha) VALUES (?, ?)";

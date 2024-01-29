@@ -126,7 +126,7 @@ $rand = $frase[array_rand($frase)];
                             <b id="tmp-clr">-</b>
                         </h2>
                         <input id="msg-chn" type="hidden" name="changer" value="<?php echo $s_id ?>">
-                        <div>
+                        <div class="fnl-cnt">
                             <div id="ky1-err"></div>
                             <button type="submit" id="frm-rgs" name="submit">Registrar</button>
                         </div>

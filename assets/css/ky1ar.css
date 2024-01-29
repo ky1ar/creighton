@@ -254,6 +254,12 @@ body {
     padding: 0.75em 2rem;
     border-radius: 1.5rem;
     border: none;
+    font-family: 'DM Sans', sans-serif;
+}
+#ky1-add-frm .box-fnl .fnl-cnt {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
 }
 #frm-cls {
     position: absolute;
