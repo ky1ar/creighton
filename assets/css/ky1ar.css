@@ -179,11 +179,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    font-size: 1rem;
     justify-content: center;
 }
 #ky1-add-frm .frm-box li span {
     font-weight: 300;
     font-size: 0.6rem;
+    opacity: 0.75;
 }
 #ky1-add-frm .box-fnl {
     margin-top: 1.5rem;

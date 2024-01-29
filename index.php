@@ -97,7 +97,7 @@ $rand = $frase[array_rand($frase)];
                 <div class="frm-box box-mdl">
                     <h2>Sensación</h2>
                     <ul>
-                        <li>L<span>Lubricante</span></li>
+                        <li>L<span>Lubri.</span></li>
                         <li>G<span>Gomoso</span></li>
                         <li>P<span>Pastoso</span></li>
                     </ul>
