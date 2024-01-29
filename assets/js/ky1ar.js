@@ -9,6 +9,16 @@ $( document ).ready(function() {
         addForm.fadeToggle();
     });
 
+    $('ul li').click(function() {
+        $(this).siblings().removeClass('sel-act');
+        $(this).addClass('sel-act');
+
+        var text = $(this).find('b').text();
+        var parentId = $(this).parent().attr('id');
+        var tmpId = parentId.replace('sel-', 'tmp-');
+        $('#' + tmpId).text(text);
+    });
+
 });
 
 

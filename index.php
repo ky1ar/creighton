@@ -86,38 +86,42 @@ $rand = $frase[array_rand($frase)];
                 <div class="frm-cnt"> 
                     <div class="frm-box">
                         <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Indicador</h2> 
-                        <ul>
-                            <li>0<span>Seco</span></li>
-                            <li>2<span>Húmedo</span></li>
-                            <li>4<span>Brillo</span></li>
-                            <li>6<span>0.5 cm</span></li>
-                            <li>8<span>2.0 cm</span></li>
-                            <li>10<span>2.5 cm</span></li>
+                        <ul id="sel-ind">
+                            <li><b>0</b><span>Seco</span></li>
+                            <li><b>2</b><span>Húmedo</span></li>
+                            <li><b>4</b><span>Brillo</span></li>
+                            <li><b>6</b><span>0.5 cm</span></li>
+                            <li><b>8</b><span>2.0 cm</span></li>
+                            <li><b>1</b>0<span>2.5 cm</span></li>
                         </ul>
                     </div>
                     <div class="frm-box box-mdl">
                         <h2><img src="assets/img/sen.svg" width="16" height="16" alt="ico">Sensación</h2>
-                        <ul>
-                            <li>L<span>Lubri.</span></li>
-                            <li>G<span>Gomoso</span></li>
-                            <li>P<span>Pastoso</span></li>
+                        <ul id="sel-sen">
+                            <li><b>L</b><span>Lubri.</span></li>
+                            <li><b>G</b><span>Gomoso</span></li>
+                            <li><b>P</b><span>Pastoso</span></li>
                         </ul>
                     </div>
                     <div class="frm-box">
                         <h2><img src="assets/img/clr.svg" width="16" height="16" alt="ico">Color</h2>
-                        <ul>
-                            <li>B<span>Marrón</span></li>
-                            <li>C<span>Nublado</span></li>
-                            <li>CK<span>Nub/Cla</span></li>
-                            <li>K<span>Claro</span></li>
-                            <li>G<span>Gomoso</span></li>
-                            <li>P<span>Pastoso</span></li>
-                            <li>R<span>R</span></li>
-                            <li>Y<span>Amarillo</span></li>
+                        <ul id="sel-clr">
+                            <li><b>B</b><span>Marrón</span></li>
+                            <li><b>C</b><span>Nublado</span></li>
+                            <li><b>C</b>K<span>Nub/Cla</span></li>
+                            <li><b>K</b><span>Claro</span></li>
+                            <li><b>G</b><span>Gomoso</span></li>
+                            <li><b>P</b><span>Pastoso</span></li>
+                            <li><b>R</b><span>R</span></li>
+                            <li><b>Y</b><span>Amarillo</span></li>
                         </ul>
                     </div>
                     <div class="box-fnl">
-                        <h2>6GC</h2>
+                        <h2>
+                            <b id="tmp-ind">-</b>
+                            <b id="tmp-sen">-</b>
+                            <b id="tmp-clr">-</b>
+                        </h2>
                         <div id="frm-rgs">Registrar</div>
                     </div>
                 </div>
