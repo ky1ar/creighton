@@ -82,7 +82,24 @@ $rand = $frase[array_rand($frase)];
         <div class="ky1-wrp">
             <div id="ky1-ovr"></div>
             <div id="ky1-add"><img src="assets/img/plsb.svg" width="20" height="20" alt="ico"></div>
-            <div id="ky1-add-frm"></div>
+            <div id="ky1-add-frm">
+                <div>
+                    <h2>Indicador</h2>
+                    <ul>
+                        <li>0</li>
+                        <li>2</li>
+                        <li>2W</li>
+                        <li>4</li>
+                        <li>6</li>
+                        <li>8</li>
+                        <li>10</li>
+                        <li>10DL</li>
+                        <li>10SL</li>
+                        <li>10WL</li>
+                    </ul>
+                </div>
+                
+            </div>
             <div class="lst-hdr">
                 <a href="#"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></a>
                 <div class="hdr-mdl">Hoy, 6 de enero</div>
