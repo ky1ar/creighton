@@ -61,6 +61,12 @@ $rand = $frase[array_rand($frase)];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#141918">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#141918">
     <link rel="icon" href="assets/img/fav.png">
     <title>Método Creighton</title>
     <?php require_once 'header.php'; ?>
