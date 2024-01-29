@@ -130,7 +130,11 @@ $rand = $frase[array_rand($frase)];
                 <a href="#"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></a>
                 <?php 
                     date_default_timezone_set('America/Bogota');
-                    $today = date('d \d\e F');
+                    $meses = array(
+                        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+                        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+                    );
+                    $today = date('d') . " de " . $meses[date('n') - 1];
                 ?>
                 <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
                 <a href="#"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></a>
