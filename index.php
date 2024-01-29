@@ -115,7 +115,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>K</b><span>Claro</span></li>
                             <li><b>G</b><span>Gomoso</span></li>
                             <li><b>P</b><span>Pastoso</span></li>
-                            <li><b>R</b><span>R</span></li>
+                            <li><b>R</b><span>-</span></li>
                             <li><b>Y</b><span>Amarillo</span></li>
                         </ul>
                     </div>
@@ -126,7 +126,10 @@ $rand = $frase[array_rand($frase)];
                             <b id="tmp-clr">-</b>
                         </h2>
                         <input id="msg-chn" type="hidden" name="changer" value="<?php echo $s_id ?>">
-                        <button type="submit" id="frm-rgs" name="submit">Registrar</button>
+                        <div>
+                            <div id="ky1-err"></div>
+                            <button type="submit" id="frm-rgs" name="submit">Registrar</button>
+                        </div>
                     </div>
                 </div>
                 <img id="frm-cls" src="assets/img/x.svg" alt="">

@@ -4,7 +4,7 @@ $( document ).ready(function() {
     const add = $('#ky1-add');
     const cls = $('#frm-cls');
     const addForm = $('#ky1-add-frm');
-    const err_msg = $('#errorDiv');
+    const err_msg = $('#ky1-err');
 
     add.on('click', function() {
         over.fadeToggle();
