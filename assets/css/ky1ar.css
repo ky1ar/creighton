@@ -130,5 +130,7 @@ body {
     z-index: 1;
     background-color: var(--primary);
 }
-
+#ky1-add-frm {
+    display: none;
+}
 
