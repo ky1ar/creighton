@@ -4,6 +4,7 @@ $( document ).ready(function() {
     const add = $('#ky1-add');
     const cls = $('#frm-cls');
     const addForm = $('#ky1-add-frm');
+    const err_msg = $('#errorDiv');
 
     add.on('click', function() {
         over.fadeToggle();
@@ -24,6 +25,31 @@ $( document ).ready(function() {
         var parentId = $(this).parent().attr('id');
         var tmpId = parentId.replace('sel-', 'tmp-');
         $('#' + tmpId).text(text);
+    });
+
+    $('#frm-rgs').on('click', function(e) {
+        e.preventDefault();
+
+        err_msg.slideUp();
+        var ind = $('#frm-ind').val();
+        var sen = $('#frm-sen').val();
+        var clr = $('#frm-clr').val();
+        
+        var dat = ind + sen + clr;
+        $.ajax({
+            url: 'register',
+            method: 'POST',
+            data: { dat: dat },
+            success: function(response) {
+                var jsonData = JSON.parse(response);
+                if (jsonData.success) {
+                    window.location.href = '/';
+                } else {
+                    err_msg.text(jsonData.message).slideDown();
+                }
+            }
+        });
+        
     });
 
 });

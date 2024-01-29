@@ -1,4 +1,7 @@
 <?php
+
+require_once 'db.php';
+
 $frase = [
     'Fe en Dios, luz infinita.',
     'Oración: puente hacia el cielo.',
@@ -141,9 +144,15 @@ $rand = $frase[array_rand($frase)];
                 <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
                 <a href="#"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></a>
             </div>
-            <div class="">
-                <p>No hay registros</p>
-            </div>
+            <ul class="">
+            <?php
+                $sql = "SELECT * FROM register r WHERE DATE(r.fecha) = CURDATE() ORDER BY r.fecha";
+
+                $result = $conn->query($sql);
+                while ($row = $result->fetch_assoc()):?>
+                    <li><span><?php echo $row['creighton'] ?></span><span><?php echo $row['fecha'] ?></span></li>
+                <?php endwhile; ?>
+                </ul>
         </div>
     </section>
 </body>
