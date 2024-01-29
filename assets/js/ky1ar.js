@@ -51,9 +51,8 @@ $( document ).ready(function() {
             }
         });
     });
-    $('.lst-del').on('click', function(e) {
-        e.preventDefault();
-
+    $('.lst-del').on('click', function() {
+       
         var cli = $(this).closest('li');
         var did = cli.attr('data-id');
 
