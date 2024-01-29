@@ -223,3 +223,10 @@ body {
     padding: 0.75em 2rem;
     border-radius: 1.5rem;
 }
+#frm-cls {
+    position: absolute;
+    top: -2rem;
+    right: -3rem;
+    cursor: pointer;
+    padding: 1rem;
+}
