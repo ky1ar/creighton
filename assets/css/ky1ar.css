@@ -133,7 +133,7 @@ body {
 #ky1-add-frm {
     display: none;
     position: absolute;
-    top: 0;
+    top: 1rem;
     z-index: 3;
     padding-bottom: 1rem;
     left: 1rem;
