@@ -133,14 +133,16 @@ body {
 #ky1-add-frm {
     display: none;
     position: absolute;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    background-color: #141918;
+    top: 0;
     z-index: 3;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding-bottom: 1rem;
     left: 1rem;
     right: 1rem;
+}
+#ky1-add-frm .frm-cnt {
+    background-color: #141918;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
 #ky1-add-frm .frm-box {
     display: flex;
@@ -186,8 +188,6 @@ body {
     font-weight: 300;
     font-size: 0.6rem;
     opacity: 0.75;
-
-    
 }
 #ky1-add-frm .box-fnl {
     margin-top: 1.5rem;

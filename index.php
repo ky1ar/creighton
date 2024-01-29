@@ -83,41 +83,43 @@ $rand = $frase[array_rand($frase)];
             <div id="ky1-ovr"></div>
             <div id="ky1-add"><img src="assets/img/plsb.svg" width="20" height="20" alt="ico"></div>
             <div id="ky1-add-frm">
-                <div class="frm-box">
-                    <h2>Indicador</h2>
-                    <ul>
-                        <li>0<span>Seco</span></li>
-                        <li>2<span>Húmedo</span></li>
-                        <li>4<span>Brillo</span></li>
-                        <li>6<span>0.5 cm</span></li>
-                        <li>8<span>2.0 cm</span></li>
-                        <li>10<span>2.5 cm</span></li>
-                    </ul>
-                </div>
-                <div class="frm-box box-mdl">
-                    <h2>Sensación</h2>
-                    <ul>
-                        <li>L<span>Lubri.</span></li>
-                        <li>G<span>Gomoso</span></li>
-                        <li>P<span>Pastoso</span></li>
-                    </ul>
-                </div>
-                <div class="frm-box">
-                    <h2>Indicador</h2>
-                    <ul>
-                        <li>B<span>Marrón</span></li>
-                        <li>C<span>Nublado</span></li>
-                        <li>CK<span>Nub/Cla</span></li>
-                        <li>K<span>Claro</span></li>
-                        <li>G<span>Gomoso</span></li>
-                        <li>P<span>Pastoso</span></li>
-                        <li>R<span>R</span></li>
-                        <li>Y<span>Amarillo</span></li>
-                    </ul>
-                </div>
-                <div class="box-fnl">
-                    <h2>6GC</h2>
-                    <div id="frm-rgs">Registrar</div>
+                <div class="frm-cnt">
+                    <div class="frm-box">
+                        <h2>Indicador</h2>
+                        <ul>
+                            <li>0<span>Seco</span></li>
+                            <li>2<span>Húmedo</span></li>
+                            <li>4<span>Brillo</span></li>
+                            <li>6<span>0.5 cm</span></li>
+                            <li>8<span>2.0 cm</span></li>
+                            <li>10<span>2.5 cm</span></li>
+                        </ul>
+                    </div>
+                    <div class="frm-box box-mdl">
+                        <h2>Sensación</h2>
+                        <ul>
+                            <li>L<span>Lubri.</span></li>
+                            <li>G<span>Gomoso</span></li>
+                            <li>P<span>Pastoso</span></li>
+                        </ul>
+                    </div>
+                    <div class="frm-box">
+                        <h2>Indicador</h2>
+                        <ul>
+                            <li>B<span>Marrón</span></li>
+                            <li>C<span>Nublado</span></li>
+                            <li>CK<span>Nub/Cla</span></li>
+                            <li>K<span>Claro</span></li>
+                            <li>G<span>Gomoso</span></li>
+                            <li>P<span>Pastoso</span></li>
+                            <li>R<span>R</span></li>
+                            <li>Y<span>Amarillo</span></li>
+                        </ul>
+                    </div>
+                    <div class="box-fnl">
+                        <h2>6GC</h2>
+                        <div id="frm-rgs">Registrar</div>
+                    </div>
                 </div>
             </div>
             <div class="lst-hdr">
