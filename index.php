@@ -88,17 +88,37 @@ $rand = $frase[array_rand($frase)];
                     <ul>
                         <li>0</li>
                         <li>2</li>
-                        <li>2W</li>
                         <li>4</li>
                         <li>6</li>
                         <li>8</li>
                         <li>10</li>
-                        <li>10DL</li>
-                        <li>10SL</li>
-                        <li>10WL</li>
                     </ul>
                 </div>
-                
+                <div class="frm-box box-mdl">
+                    <h2>Sensación</h2>
+                    <ul>
+                        <li>L</li>
+                        <li>G</li>
+                        <li>P</li>
+                    </ul>
+                </div>
+                <div class="frm-box">
+                    <h2>Indicador</h2>
+                    <ul>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>CK</li>
+                        <li>G</li>
+                        <li>K</li>
+                        <li>P</li>
+                        <li>R</li>
+                        <li>Y</li>
+                    </ul>
+                </div>
+                <div class="box-fnl">
+                    <h2>6GC</h2>
+                    <div id="frm-rgs">Registrar</div>
+                </div>
             </div>
             <div class="lst-hdr">
                 <a href="#"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></a>
