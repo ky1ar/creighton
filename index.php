@@ -92,7 +92,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>4</b><span>Brillo</span></li>
                             <li><b>6</b><span>0.5 cm</span></li>
                             <li><b>8</b><span>2.0 cm</span></li>
-                            <li><b>1</b>0<span>2.5 cm</span></li>
+                            <li><b>10</b><span>2.5 cm</span></li>
                         </ul>
                     </div>
                     <div class="frm-box box-mdl">
@@ -108,7 +108,7 @@ $rand = $frase[array_rand($frase)];
                         <ul id="sel-clr">
                             <li><b>B</b><span>Marrón</span></li>
                             <li><b>C</b><span>Nublado</span></li>
-                            <li><b>C</b>K<span>Nub/Cla</span></li>
+                            <li><b>CK</b><span>Nub/Cla</span></li>
                             <li><b>K</b><span>Claro</span></li>
                             <li><b>G</b><span>Gomoso</span></li>
                             <li><b>P</b><span>Pastoso</span></li>

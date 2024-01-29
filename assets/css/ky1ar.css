@@ -161,7 +161,8 @@ body {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
-    gap: 0.5rem;
+    display: flex;
+    gap: 0.5rem; 
 }
 #ky1-add-frm .frm-box ul {
     list-style: none;
@@ -181,9 +182,16 @@ body {
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
     font-size: 1rem;
     justify-content: center;
+    transition: 0.2s all ease-in-out;
+}
+#ky1-add-frm .frm-box li.sel-act {
+    background-color: #31d69d;
+    color: #212525;
+}
+#ky1-add-frm .frm-box li.sel-act span {
+    font-weight: 700;
 }
 #ky1-add-frm .frm-box li span {
     font-weight: 300;
