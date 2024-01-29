@@ -153,7 +153,7 @@ $rand = $frase[array_rand($frase)];
                     while ($row = $result->fetch_assoc()):?>
                         <li data-id="<?php echo $row['id'] ?>">
                         <b><?php echo $row['creighton'] ?><span><?php echo $row['hora'] ?></span></b>
-                        <img src="assets/img/del.svg" width="20" height="20" alt="ico">
+                        <img src="assets/img/del.svg" width="16" height="16" alt="ico">
                     </li>
                     <?php endwhile; ?>
                 </ul>
