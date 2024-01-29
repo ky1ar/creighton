@@ -83,7 +83,7 @@ $rand = $frase[array_rand($frase)];
             <div id="ky1-ovr"></div>
             <div id="ky1-add"><img src="assets/img/plsb.svg" width="20" height="20" alt="ico"></div>
             <div id="ky1-add-frm">
-                <div>
+                <div class="frm-box">
                     <h2>Indicador</h2>
                     <ul>
                         <li>0</li>
