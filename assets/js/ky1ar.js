@@ -63,7 +63,7 @@ $( document ).ready(function() {
             success: function(response) {
                 var jsonData = JSON.parse(response);
                 if (jsonData.success) {
-                    $(this).slideUp();
+                    window.location.href = '/';
                 } else {
                     err_msg.text(jsonData.message).slideDown();
                 }
