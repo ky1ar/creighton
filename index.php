@@ -156,7 +156,7 @@ $rand = $frase[array_rand($frase)];
                     while ($row = $result->fetch_assoc()):?>
                         <li data-id="<?php echo $row['id'] ?>">
                         <b><?php echo $row['creighton'] ?><span><?php echo $row['hora'] ?></span></b>
-                        <div class="lst-del"><img src="assets/img/del.svg" width="12" height="12" alt="ico"></div>
+                        <button type="submit" class="lst-del" name="submit"><img src="assets/img/del.svg" width="12" height="12" alt="ico"></button>
                     </li>
                     <?php endwhile; ?>
                 </ul>
