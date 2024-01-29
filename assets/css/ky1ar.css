@@ -117,10 +117,11 @@ body {
 }
 #ky1-lst .lst-dat li {
     background-color: #212525;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     display: flex;
     justify-content: space-between;
     border-radius: 0.5rem;
+    border-left: 0.25rem solid #31d69d;
 }
 #ky1-lst .lst-dat li b {
     display: flex;
@@ -134,8 +135,16 @@ body {
     letter-spacing: 0.025rem;
     font-size: 0.75rem;
 }
-#ky1-lst .lst-dat li img {
-    padding: 0.125rem;
+#ky1-lst .lst-dat li .lst-del {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    background-color: #141918;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
 }
 /*******************************************************************/
 #ky1-ovr {
@@ -267,4 +276,8 @@ body {
     right: 0;
     cursor: pointer;
     padding: 1rem;
+}
+#ky1-err {
+    color: #31d69d;
+    font-weight: 600;
 }

@@ -50,9 +50,27 @@ $( document ).ready(function() {
                 }
             }
         });
-        
     });
+    $('.lst-del').on('click', function(e) {
+        e.preventDefault();
 
+        var cli = $(this).closest('li');
+        var did = cli.attr('data-id');
+
+        $.ajax({
+            url: 'delete',
+            method: 'POST',
+            data: { did: did },
+            success: function(response) {
+                var jsonData = JSON.parse(response);
+                if (jsonData.success) {
+                    $(this).slideUp();
+                } else {
+                    err_msg.text(jsonData.message).slideDown();
+                }
+            }
+        });
+    });
 });
 
 
