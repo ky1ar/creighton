@@ -128,7 +128,11 @@ $rand = $frase[array_rand($frase)];
             </div>
             <div class="lst-hdr">
                 <a href="#"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></a>
-                <div class="hdr-mdl">Hoy, 6 de enero</div>
+                <?php 
+                    date_default_timezone_set('America/Bogota');
+                    $today = date('d \d\e F');
+                ?>
+                <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
                 <a href="#"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></a>
             </div>
             <div class="">
