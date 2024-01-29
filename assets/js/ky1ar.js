@@ -5,17 +5,23 @@ $( document ).ready(function() {
     const cls = $('#frm-cls');
     const addForm = $('#ky1-add-frm');
     const err_msg = $('#ky1-err');
+    const hdr = $('#ky1-hdr');
 
     add.on('click', function() {
         over.fadeToggle();
         addForm.fadeToggle();
+        add.toggleClass('ky1-blr');
+        hdr.toggleClass('ky1-blr');
     });
+
     cls.on('click', function() {
         over.fadeToggle();
         addForm.fadeToggle();
         $('#ky1-add-frm ul li').removeClass('sel-act');
         $('.box-fnl b').text('-');
         err_msg.slideUp();
+        add.toggleClass('ky1-blr');
+        hdr.toggleClass('ky1-blr');
     });
 
     $('#ky1-add-frm ul li').click(function() {

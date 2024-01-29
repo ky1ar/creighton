@@ -282,3 +282,6 @@ body {
     color: #31d69d;
     font-weight: 600;
 }
+.ky1-blr {
+    filter: blur(0.25rem);
+}
