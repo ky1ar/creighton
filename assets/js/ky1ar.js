@@ -12,9 +12,11 @@ $( document ).ready(function() {
     cls.on('click', function() {
         over.fadeToggle();
         addForm.fadeToggle();
+        $('#ky1-add-frm ul li').removeClass('sel-act');
+        $('.box-fnl b').text('-');
     });
 
-    $('ul li').click(function() {
+    $('#ky1-add-frm ul li').click(function() {
         $(this).siblings().removeClass('sel-act');
         $(this).addClass('sel-act');
 
