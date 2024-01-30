@@ -6,6 +6,11 @@ $( document ).ready(function() {
     const addForm = $('#ky1-add-frm');
     const err_msg = $('#ky1-err');
     const hdr = $('#ky1-hdr');
+    const lub = $('#tmp-lub');
+
+    lub.on('click', function() {
+        $(this).toggleClass('ky1-act');
+    });
 
     add.on('click', function() {
         over.fadeToggle();
@@ -41,8 +46,9 @@ $( document ).ready(function() {
         var ind = $('#tmp-ind').text();
         var sen = $('#tmp-sen').text();
         var clr = $('#tmp-clr').text();
-        
-        var dat = ind + sen + clr;
+        var lbr = lub.hasClass('ky1-act') ? "L" : "";
+
+        var dat = ind + sen + clr + lbr;
         $.ajax({
             url: 'register',
             method: 'POST',

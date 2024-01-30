@@ -247,10 +247,33 @@ body {
     align-items: center;
     display: flex;
 }
+#ky1-add-frm .box-fnl .fnl-dat {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+}
 #ky1-add-frm .box-fnl h2 {
     margin: 0;
     font-weight: 400;
     font-size: 1.5rem;
+}
+#ky1-add-frm .box-fnl h3 {
+    margin: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212525;
+    border-radius: 2rem;
+    font-size: 1rem;
+    opacity: 0.75;
+    transition: 0.25s all ease-in-out;
+}
+#ky1-add-frm .box-fnl h3.ky1-act {
+    opacity: 1;
+    background-color: #31d69d;
+    color: #212525;
 }
 #ky1-add-frm .box-fnl h2 {
     margin: 0;
@@ -271,6 +294,16 @@ body {
     gap: 0.75rem;
     align-items: center;
 }
+#ky1-add-frm .box-fnl {
+    margin-top: 1.5rem;
+    border-top: dashed 1px #555;
+    padding-top: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
 #frm-cls {
     position: absolute;
     top: 0;

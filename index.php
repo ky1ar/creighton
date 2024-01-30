@@ -123,12 +123,15 @@ $rand = $frase[array_rand($frase)];
                         </ul>
                     </div>
                     <div class="box-fnl">
-                        <h2>
-                            <b id="tmp-ind">-</b>
-                            <b id="tmp-sen">-</b>
-                            <b id="tmp-clr">-</b>
-                        </h2>
-                        <input id="msg-chn" type="hidden" name="changer" value="<?php echo $s_id ?>">
+                        <div class="fnl-dat">
+                            <h2>
+                                <b id="tmp-ind">-</b>
+                                <b id="tmp-sen">-</b>
+                                <b id="tmp-clr">-</b>
+                            </h2>
+                            <h3 id="tmp-lub">L</h3>
+                        </div>
+                       
                         <div class="fnl-cnt">
                             <div id="ky1-err"></div>
                             <button type="submit" id="frm-rgs" name="submit">Registrar</button>
