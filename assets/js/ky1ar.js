@@ -100,16 +100,20 @@ $( document ).ready(function() {
     function reload(offset) {
         
         fecha.setDate(fecha.getDate() + offset);
-        var formattedDate = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
+        var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
 
-        console.log(formattedDate);
+        var opt = { day: 'numeric', month: 'long' };
+        var t_date = f_date.toLocaleDateString('es-ES', opt);
+        console.log(t_date);
+
+        console.log(f_date);
         $.ajax({
             url: 'reload',
             method: 'POST',
-            data: { fecha: formattedDate },
+            data: { fecha: f_date },
             success: function(response) {
                 $('.lst-dat').html(response);
-                $('.hdr-mdl').text(formattedDate);
+                $('.hdr-mdl').text(f_date);
             },
             error: function(xhr, status, error) {
                 console.error(xhr.responseText);
