@@ -87,7 +87,7 @@ body {
     margin: 0;
     font-size: 0.85rem;
     font-weight: 200;
-    opacity: 0.75;
+    color: #31d69d;
 }
 #ky1-hdr .hdr-rgt {
     display: flex;
