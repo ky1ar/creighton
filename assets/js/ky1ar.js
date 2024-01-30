@@ -108,10 +108,11 @@ $( document ).ready(function() {
 
         if (offset == 0) {
             fecha = hoy;
-            msj = 'Hoy,';
+            msj = 'Hoy, ';
         }
         if (fecha == hoy) {
-            msj = 'Hoy,';
+            msj = 'Hoy, ';
+            
         }
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
