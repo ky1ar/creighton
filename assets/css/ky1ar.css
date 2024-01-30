@@ -101,9 +101,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -1rem;
 }
 #ky1-lst .lst-hdr a {
     padding: 0.75rem;
+}
+#ky1-lst .lst-hdr .lst-btn,
+#ky1-lst .lst-hdr .hdr-mdl  {
+    padding: 1rem;
 }
 #ky1-lst .lst-dat {
     padding: 0;

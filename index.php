@@ -141,7 +141,7 @@ $rand = $frase[array_rand($frase)];
                 <img id="frm-cls" src="assets/img/x.svg" alt="">
             </form>
             <div class="lst-hdr">
-                <div id="ky1-bck"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></div>
+                <div id="ky1-bck" class="lst-btn"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></div>
                 <?php 
                     date_default_timezone_set('America/Bogota');
                     $meses = array(
@@ -151,7 +151,7 @@ $rand = $frase[array_rand($frase)];
                     $today = date('d') . " de " . $meses[date('n') - 1];
                 ?>
                 <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
-                <div id="ky1-nxt"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></div>
+                <div id="ky1-nxt" class="lst-btn"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></div>
             </div>
             <form method="post">
                 <ul class="lst-dat">

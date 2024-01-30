@@ -88,7 +88,7 @@ $( document ).ready(function() {
     });
 
     var fecha = new Date();
-
+    
     bck.click(function(){
         reload(-1);
     });
@@ -97,8 +97,22 @@ $( document ).ready(function() {
         reload(1);
     });
 
+    $('.hdr-mdl').click(function(){
+        reload(0);
+    });
+
     function reload(offset) {
         
+        var hoy = new Date();
+        var msj = '';
+
+        if (offset == 0) {
+            fecha = hoy;
+            msj = 'Hoy,';
+        }
+        if (fecha == hoy) {
+            msj = 'Hoy,';
+        }
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
 
@@ -108,7 +122,11 @@ $( document ).ready(function() {
 
         var months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
         var month = months[parseInt(mon, 10) - 1];
-        var t_date = day + ' de ' + month;
+        
+        if (fecha == 0) {
+
+        }
+        var t_date = msj + day + ' de ' + month;
 
         $.ajax({
             url: 'reload',
@@ -123,6 +141,7 @@ $( document ).ready(function() {
             }
         });
     }
+    
 });
 
 
