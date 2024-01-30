@@ -87,6 +87,8 @@ $( document ).ready(function() {
         });
     });
 
+    var fecha = new Date();
+
     bck.click(function(){
         reload(-1);
     });
@@ -96,9 +98,10 @@ $( document ).ready(function() {
     });
 
     function reload(offset) {
-        var fecha = new Date();
+        
         fecha.setDate(fecha.getDate() + offset);
         var formattedDate = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
+        
         console.log(formattedDate);
         $.ajax({
             url: 'reload',
