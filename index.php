@@ -156,7 +156,7 @@ $rand = $frase[array_rand($frase)];
             <form method="post">
                 <ul class="lst-dat">
                 <?php
-                    $sql = "SELECT id, creighton, DATE_FORMAT(DATE_SUB(r.fecha, INTERVAL 5 HOUR), '%H:%i:%s') AS hora FROM register r WHERE DATE(r.fecha) = CURDATE() ORDER BY r.fecha";
+                    $sql = "SELECT id, creighton, DATE_FORMAT(r.fecha, '%H:%i:%s') AS hora FROM register r WHERE DATE(r.fecha) = CURDATE() ORDER BY r.fecha";
 
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()):?>
