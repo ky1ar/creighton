@@ -101,7 +101,7 @@ $( document ).ready(function() {
         
         fecha.setDate(fecha.getDate() + offset);
         var formattedDate = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
-        
+
         console.log(formattedDate);
         $.ajax({
             url: 'reload',
@@ -109,6 +109,7 @@ $( document ).ready(function() {
             data: { fecha: formattedDate },
             success: function(response) {
                 $('.lst-dat').html(response);
+                $('.hdr-mdl').text(formattedDate);
             },
             error: function(xhr, status, error) {
                 console.error(xhr.responseText);
