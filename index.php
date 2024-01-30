@@ -168,7 +168,7 @@ $rand = $frase[array_rand($frase)];
                             </li>
                         <?php endwhile; ?>
                     <?php else:?>
-                        <li>No hay registros</li>
+                        <li class="lst-clr">No hay registros</li>
                     <?php endif; ?>
                 </ul>
             </form>

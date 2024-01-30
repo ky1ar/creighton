@@ -122,6 +122,10 @@ body {
     border-radius: 0.5rem;
     border-left: 0.25rem solid #31d69d;
 }
+#ky1-lst .lst-dat li.lst-clr {
+    text-align: center;
+    border-right: 0.25rem solid #31d69d;
+}
 #ky1-lst .lst-dat li b {
     display: flex;
     font-size: 1rem;
