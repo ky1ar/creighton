@@ -102,11 +102,11 @@ $( document ).ready(function() {
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
 
+        var t_date = new Date(f_date);
         var opt = { day: 'numeric', month: 'long' };
         var t_date = f_date.toLocaleDateString('es-ES', opt);
         console.log(t_date);
-
-        console.log(f_date);
+        
         $.ajax({
             url: 'reload',
             method: 'POST',
