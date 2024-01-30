@@ -8,6 +8,9 @@ $( document ).ready(function() {
     const hdr = $('#ky1-hdr');
     const lub = $('#tmp-lub');
 
+    const bck = $('#ky1-bck');
+    const nxt = $('#ky1-nxt');
+
     lub.on('click', function() {
         $(this).toggleClass('ky1-act');
     });
@@ -63,6 +66,7 @@ $( document ).ready(function() {
             }
         });
     });
+
     $('.lst-del').on('click', function(e) {
         e.preventDefault();
         var cli = $(this).closest('li');
@@ -82,6 +86,32 @@ $( document ).ready(function() {
             }
         });
     });
+
+    bck.click(function(){
+        reload(-1);
+    });
+
+    nxt.click(function(){
+        reload(1);
+    });
+
+    function reload(offset) {
+        var fecha = new Date();
+        fecha.setDate(fecha.getDate() + offset);
+        var formattedDate = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
+
+        $.ajax({
+            url: 'reload',
+            method: 'POST',
+            data: { fecha: formattedDate },
+            success: function(response) {
+                $('.lst-dat').html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    }
 });
 
 
