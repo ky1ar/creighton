@@ -94,7 +94,7 @@ $rand = $frase[array_rand($frase)];
             <form id="ky1-add-frm" method="post">
                 <div class="frm-cnt"> 
                     <div class="frm-box">
-                        <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Indicador</h2> 
+                        <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Elasticidad</h2> 
                         <ul id="sel-ind">
                             <li><b>0</b><span>Seco</span></li>
                             <li><b>2</b><span>Húmedo</span></li>
@@ -105,9 +105,8 @@ $rand = $frase[array_rand($frase)];
                         </ul>
                     </div>
                     <div class="frm-box box-mdl">
-                        <h2><img src="assets/img/sen.svg" width="16" height="16" alt="ico">Sensación</h2>
+                        <h2><img src="assets/img/sen.svg" width="16" height="16" alt="ico">Textura</h2>
                         <ul id="sel-sen">
-                            <li><b>L</b><span>Lubri.</span></li>
                             <li><b>G</b><span>Gomoso</span></li>
                             <li><b>P</b><span>Pastoso</span></li>
                         </ul>
@@ -119,9 +118,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>C</b><span>Nublado</span></li>
                             <li><b>CK</b><span>Nub/Cla</span></li>
                             <li><b>K</b><span>Claro</span></li>
-                            <li><b>G</b><span>Gomoso</span></li>
-                            <li><b>P</b><span>Pastoso</span></li>
-                            <li><b>R</b><span>-</span></li>
+                            <li><b>R</b><span>Rojo</span></li>
                             <li><b>Y</b><span>Amarillo</span></li>
                         </ul>
                     </div>
