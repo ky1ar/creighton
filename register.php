@@ -3,6 +3,7 @@ require_once 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['dat'])) {
 
+    date_default_timezone_set('America/Bogota');
     $dat = $_POST['dat'];   
     $tdy = date('Y-m-d H:i:s');
     
