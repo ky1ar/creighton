@@ -124,7 +124,7 @@ body {
 }
 #ky1-lst .lst-dat li.lst-clr {
     text-align: center;
-    border-right: 0.25rem solid #31d69d;
+    width: 100%;
 }
 #ky1-lst .lst-dat li b {
     display: flex;
