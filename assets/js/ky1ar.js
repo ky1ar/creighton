@@ -102,18 +102,21 @@ $( document ).ready(function() {
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
 
-        var t_date = new Date(f_date);
-        var opt = { day: 'numeric', month: 'long' };
-        var t_date = f_date.toLocaleDateString('es-ES', opt);
-        console.log(t_date);
-        
+        var prt = f_date.split('-');
+        var day = prt[2];
+        var mon = prt[1];
+
+        var months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+        var month = months[parseInt(mon, 10) - 1];
+        var t_date = day + ' de ' + month;
+
         $.ajax({
             url: 'reload',
             method: 'POST',
             data: { fecha: f_date },
             success: function(response) {
                 $('.lst-dat').html(response);
-                $('.hdr-mdl').text(f_date);
+                $('.hdr-mdl').text(t_date);
             },
             error: function(xhr, status, error) {
                 console.error(xhr.responseText);
