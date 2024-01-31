@@ -72,7 +72,7 @@ $( document ).ready(function() {
         e.preventDefault();
         var cli = $(this).closest('li');
         var did = cli.attr('data-id');
-
+        console.log(did);
         $.ajax({
             url: 'delete',
             method: 'POST',
