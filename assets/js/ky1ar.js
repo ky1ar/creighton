@@ -110,13 +110,15 @@ $( document ).ready(function() {
             fecha = hoy;
             msj = 'Hoy, ';
         }
-        console.log( fecha + ' | ' + hoy );
-        if (fecha == hoy) {
-            msj = 'Hoy, ';
-            
-        }
+
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
+
+        var f_hoy = hoy.getFullYear() + '-' + ('0' + (hoy.getMonth() + 1)).slice(-2) + '-' + ('0' + hoy.getDate()).slice(-2);
+
+        if (f_date == f_hoy) {
+            msj = 'Hoy, ';
+        }
 
         var prt = f_date.split('-');
         var day = prt[2];
