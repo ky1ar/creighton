@@ -5,8 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['did'])) {
 
     $did = $_POST['did'];   
     
-    
-    $sql = "DELETE FROM register WHERE id = ?;";
+    $sql = "DELETE FROM register WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $did);
     $stmt->execute();
