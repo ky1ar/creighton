@@ -49,6 +49,7 @@ $( document ).ready(function() {
         var ind = $('#tmp-ind').text();
         var sen = $('#tmp-sen').text();
         var clr = $('#tmp-clr').text();
+        var day = cli.attr('data-id');
         var lbr = lub.hasClass('ky1-act') ? "L" : "";
 
         var dat = ind + sen + clr + lbr;
@@ -135,6 +136,7 @@ $( document ).ready(function() {
             success: function(response) {
                 $('.lst-dat').html(response);
                 $('.hdr-mdl').text(t_date);
+                $('.hdr-mdl').attr('data-day', f_date);
             },
             error: function(xhr, status, error) {
                 console.error(xhr.responseText);
