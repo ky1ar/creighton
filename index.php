@@ -150,7 +150,7 @@ $rand = $frase[array_rand($frase)];
                     );
                     $today = date('d') . " de " . $meses[date('n') - 1];
                 ?>
-                <div class="hdr-mdl">Hoy, <?php echo $today ?></div>
+                <div data-day="<?php echo date("Y-m-d") ?>" class="hdr-mdl">Hoy, <?php echo $today ?></div>
                 <div id="ky1-nxt" class="lst-btn"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></div>
             </div>
             <form method="post">
