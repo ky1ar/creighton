@@ -110,6 +110,7 @@ $( document ).ready(function() {
             fecha = hoy;
             msj = 'Hoy, ';
         }
+        console.log( fecha + ' | ' + hoy );
         if (fecha == hoy) {
             msj = 'Hoy, ';
             
