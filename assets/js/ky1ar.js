@@ -50,7 +50,7 @@ $( document ).ready(function() {
         var sen = $('#tmp-sen').text();
         var clr = $('#tmp-clr').text();
         var lbr = lub.hasClass('ky1-act') ? "L" : "";
-        var day = $('.hdr-mdl').attr('data-id');
+        var day = $('.hdr-mdl').attr('data-day');
 
         var dat = ind + sen + clr + lbr;
         $.ajax({
