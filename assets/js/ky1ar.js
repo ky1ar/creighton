@@ -113,7 +113,6 @@ $( document ).ready(function() {
 
         fecha.setDate(fecha.getDate() + offset);
         var f_date = fecha.getFullYear() + '-' + ('0' + (fecha.getMonth() + 1)).slice(-2) + '-' + ('0' + fecha.getDate()).slice(-2);
-
         var f_hoy = hoy.getFullYear() + '-' + ('0' + (hoy.getMonth() + 1)).slice(-2) + '-' + ('0' + hoy.getDate()).slice(-2);
 
         if (f_date == f_hoy) {
@@ -127,9 +126,6 @@ $( document ).ready(function() {
         var months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
         var month = months[parseInt(mon, 10) - 1];
         
-        if (fecha == 0) {
-
-        }
         var t_date = msj + day + ' de ' + month;
 
         $.ajax({
