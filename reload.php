@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fecha'])) {
 
     $fecha = $_POST['fecha'];
 
-    $sql = "SELECT id, creighton, DATE_FORMAT(r.fecha, '%h:%i:%s %p') AS created FROM register r WHERE r.fecha = '$fecha' ORDER BY r.created";
+    $sql = "SELECT id, creighton, DATE_FORMAT(r.created, '%h:%i:%s %p') AS created FROM register r WHERE r.day = '$fecha' ORDER BY r.created";
     
     $result = $conn->query($sql);
     
