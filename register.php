@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['dat'])) {
         echo json_encode(array("success" => false, "message" => "Error"));
             exit();
     } else {
-        $sql = "INSERT INTO register (creighton, day, created) VALUES (?, ?)";
+        $sql = "INSERT INTO register (creighton, day) VALUES (?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ss", $dat, $day);
         $stmt->execute();
