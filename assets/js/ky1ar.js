@@ -49,14 +49,14 @@ $( document ).ready(function() {
         var ind = $('#tmp-ind').text();
         var sen = $('#tmp-sen').text();
         var clr = $('#tmp-clr').text();
-        var day = cli.attr('data-id');
         var lbr = lub.hasClass('ky1-act') ? "L" : "";
+        var day = $('.hdr-mdl').attr('data-id');
 
         var dat = ind + sen + clr + lbr;
         $.ajax({
             url: 'register',
             method: 'POST',
-            data: { dat: dat },
+            data: { dat: dat, day: day },
             success: function(response) {
                 var jsonData = JSON.parse(response);
                 if (jsonData.success) {
