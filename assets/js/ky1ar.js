@@ -73,19 +73,7 @@ $( document ).ready(function() {
         var cli = $(this).closest('li');
         var did = cli.attr('data-id');
         
-        $.ajax({
-            url: 'delete',
-            method: 'POST',
-            data: { did: did },
-            success: function(response) {
-                var jsonData = JSON.parse(response);
-                if (jsonData.success) {
-                    window.location.href = '/';
-                } else {
-                    err_msg.text(jsonData.message).slideDown();
-                }
-            }
-        });
+        
     });
 
     var fecha = new Date();
