@@ -68,8 +68,9 @@ $( document ).ready(function() {
         });
     });
 
-    $('.lst-del').on('click', function(e) {
+    $(document).on('click', '.lst-del', function(e) {
         e.preventDefault();
+
         var cli = $(this).closest('li');
         var did = cli.attr('data-id');
 
