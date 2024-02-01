@@ -156,7 +156,7 @@ $rand = $frase[array_rand($frase)];
             <form method="post">
                 <ul class="lst-dat">
                 <?php
-                    $sql = "SELECT id, creighton, DATE_FORMAT(r.created, '%h:%i:%s %p') AS created FROM register r WHERE r.day = DATE(DATE_SUB(NOW(), INTERVAL 5 HOUR)) ORDER BY r.created";
+                    $sql = "SELECT id, creighton, created FROM register r WHERE r.day = DATE(DATE_SUB(NOW(), INTERVAL 5 HOUR)) ORDER BY r.created";
 
                     $result = $conn->query($sql);
 
