@@ -72,8 +72,8 @@ $( document ).ready(function() {
         e.preventDefault();
         var cli = $(this).closest('li');
         var did = cli.attr('data-id');
-        console.log(did);
-        /*$.ajax({
+
+        $.ajax({
             url: 'delete',
             method: 'POST',
             data: { did: did },
@@ -85,7 +85,7 @@ $( document ).ready(function() {
                     err_msg.text(jsonData.message).slideDown();
                 }
             }
-        });*/
+        });
     });
 
     var fecha = new Date();
