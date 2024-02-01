@@ -133,7 +133,7 @@ body {
 }
 #ky1-lst .lst-dat li b {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     flex-direction: column;
 }
@@ -141,7 +141,7 @@ body {
     font-weight: 300;
     opacity: 0.5;
     letter-spacing: 0.025rem;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 #ky1-lst .lst-dat li .lst-del {
     display: flex;
