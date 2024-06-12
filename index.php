@@ -64,6 +64,7 @@ $rand = $frase[array_rand($frase)];
     <link rel="apple-touch-icon" href="assets/img/icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#141918">
+    <link rel="apple-touch-startup-image" href="assets/img/icon.png">
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#141918">
