@@ -50,7 +50,7 @@ $( document ).ready(function() {
         var sen = $('#tmp-sen').text();
         var clr = $('#tmp-clr').text();
         var lbr = lub.hasClass('ky1-act') ? "L" : "";
-        var day = $('.hdr-mdl').attr('data-day');
+        var day = $('.day-day.selected').closest('.day-item').attr('data-date');
 
         var dat = ind + sen + clr + lbr;
         $.ajax({
@@ -146,7 +146,6 @@ $( document ).ready(function() {
     }
 
     function nreload(date) {
-        console.log(date);
         $.ajax({
             url: 'reload',
             method: 'POST',
@@ -307,8 +306,6 @@ $( document ).ready(function() {
     });
     
     $nextMonthBtn.on('click', function() {
-        console.log(`currentDate before next: ${currentDate}`);
-    
         const nextMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
         const today = new Date();
         
@@ -323,7 +320,6 @@ $( document ).ready(function() {
             currentDate = new Date(nextMonthDate.getFullYear(), nextMonthDate.getMonth(), 1);
         }
     
-        console.log(`currentDate after next: ${currentDate}`);
         renderDays();
     });
     
