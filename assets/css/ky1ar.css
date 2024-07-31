@@ -82,12 +82,14 @@ body {
     margin: 0;
     font-size: 0.9rem;
     font-weight: 600;
+    line-height: 1.125rem;
 }
 #ky1-hdr .hdr-txt h2 {
     margin: 0;
     font-size: 0.85rem;
     font-weight: 500;
     color: #a28aee;
+    line-height: 1.125rem;
 }
 #ky1-hdr .hdr-rgt {
     display: flex;
