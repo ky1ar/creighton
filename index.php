@@ -141,19 +141,18 @@ $rand = $frase[array_rand($frase)];
                 </div>
                 <img id="frm-cls" src="assets/img/x.svg" alt="">
             </form>
-            <div class="lst-hdr">
-                <div id="ky1-bck" class="lst-btn"><img src="assets/img/lft.svg" width="16" height="16" alt="ico"></div>
-                <?php 
-                    date_default_timezone_set('America/Bogota');
-                    $meses = array(
-                        "enero", "febrero", "marzo", "abril", "mayo", "junio",
-                        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
-                    );
-                    $today = date('d') . " de " . $meses[date('n') - 1];
-                ?>
-                <div data-day="<?php echo date("Y-m-d") ?>" class="hdr-mdl">Hoy, <?php echo $today ?></div>
-                <div id="ky1-nxt" class="lst-btn"><img src="assets/img/rgt.svg" width="16" height="16" alt="ico"></div>
+
+            <div class="calendar-header">
+                <span class="month-name"></span>
+                <button class="prev-month">Previous</button>
+                <button class="next-month">Next</button>
             </div>
+
+            <div class="day-selector">
+                <div class="days-container">
+                </div>
+            </div>
+
             <form method="post">
                 <ul class="lst-dat">
                 <?php

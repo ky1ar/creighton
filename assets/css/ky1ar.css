@@ -327,3 +327,50 @@ body {
 .ky1-blr {
     filter: blur(0.25rem);
 }
+
+
+.day-selector {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .days-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  
+  .days-container::-webkit-scrollbar {
+    display: none; /* WebKit */
+  }
+  
+  .day-item {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    scroll-snap-align: center;
+    cursor: pointer;
+  }
+  
+  .day-item.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Espacio adicional al inicio y final para centrar los días */
+  .day-placeholder {
+    flex: 0 0 calc(50% - 25px); /* Ajuste según el ancho de los elementos día */
+    height: 50px;
+  }
