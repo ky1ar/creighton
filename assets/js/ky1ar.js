@@ -212,16 +212,16 @@ $( document ).ready(function() {
             const formattedDate = dayDate.toISOString().split('T')[0];
             const $dayItem = $('<div>')
                 .addClass('day-item')
-                .html(`${day} <span class="day-name">${dayName}</span>`)
+                .html(`<span class="day-day">${day}</span> <span class="day-name">${dayName}</span>`)
                 .attr('data-date', formattedDate);
         
             if (year === todayYear && month === todayMonth && day === todayDay) {
-                $dayItem.addClass('selected');
+                $dayItem.find('.day-day').addClass('selected');
             }
         
             $dayItem.on('click', function() {
-                $('.day-item.selected').removeClass('selected');
-                $(this).addClass('selected');
+                $('.day-day.selected').removeClass('selected');
+                $(this).find('.day-day').addClass('selected');
         
                 this.scrollIntoView({ inline: 'center', behavior: 'smooth' });
                 nreload($(this).data('date'));
@@ -243,12 +243,12 @@ $( document ).ready(function() {
     
         const $selectedDayItem = $(`.day-item:contains(${currentDate.getDate()})`);
         if ($selectedDayItem.length) {
-            $selectedDayItem.addClass('selected');
+            $selectedDayItem.find('.day-day').addClass('selected');
             $selectedDayItem[0].scrollIntoView({ inline: 'center', behavior: 'smooth' });
         } else {
             const $lastDayItem = $(`.day-item:contains(${lastDay})`);
             if ($lastDayItem.length) {
-                $lastDayItem.addClass('selected');
+                $lastDayItem.find('.day-day').addClass('selected');
                 $lastDayItem[0].scrollIntoView({ inline: 'center', behavior: 'smooth' });
             }
         }
@@ -257,7 +257,7 @@ $( document ).ready(function() {
     
     function updateMonthName() {
         const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"];
-        $monthName.text(`${monthNames[currentDate.getMonth()]}`);
+        $monthName.text(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
     }
     
     function updateCentralDay() {
@@ -276,8 +276,8 @@ $( document ).ready(function() {
         });
     
         if ($closestItem) {
-            $('.day-item.selected').removeClass('selected');
-            $closestItem.addClass('selected');
+            $('.day-day.selected').removeClass('selected');
+            $closestItem.find('.day-day').addClass('selected');
         }
     }
     
@@ -289,7 +289,7 @@ $( document ).ready(function() {
     
         isScrolling = setTimeout(function() {
             if (!isTouching) {
-                nreload($('.day-item.selected').data('date'));
+                nreload($('.day-day.selected').closest('.day-item').data('date'));
             }
         }, 200);
     });

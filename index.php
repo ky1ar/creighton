@@ -73,6 +73,8 @@ $rand = $frase[array_rand($frase)];
     <?php require_once 'header.php'; ?>
 </head>
 <body>
+    <?php require_once 'application/views/sprite.php'; ?>
+
     <header id="ky1-hdr">
         <div class="ky1-wrp">
             <div class="hdr-lft">
@@ -144,8 +146,19 @@ $rand = $frase[array_rand($frase)];
 
             <div class="calendar-header">
                 <span class="month-name"></span>
-                <button class="prev-month">Previous</button>
-                <button class="next-month">Next</button>
+                <div class="buttons">
+                    <button class="prev-month">
+                        <svg width="16" height="16" class="flip">
+                            <use xlink:href="#icon-right"></use>
+                        </svg>
+                    </button>
+
+                    <button class="next-month">
+                        <svg width="16" height="16">
+                            <use xlink:href="#icon-right"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <div class="day-selector">

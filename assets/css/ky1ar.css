@@ -9,10 +9,9 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root {
-	--primary: #31d69d;
+	--primary: #a28aee;
 	--primaryopacity: #ffeee4;
 
 	--secondary: #141918;
@@ -23,6 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	--graydark: #e6e6e6;
     --graydarkest : #cccccc;
 	--black: #000000;
+    --font: "Poppins";
 }
 *, 
 *:before, 
@@ -44,10 +44,10 @@ svg {
 }
 /*******************************************************************/
 body {
-    background-color: var(--secondary);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--secondary);
     margin: 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font), sans-serif;
     font-size: 0.85rem;
     min-width: 22rem;
 }
@@ -81,13 +81,13 @@ body {
 #ky1-hdr .hdr-txt h1 {
     margin: 0;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 #ky1-hdr .hdr-txt h2 {
     margin: 0;
     font-size: 0.85rem;
-    font-weight: 200;
-    color: #31d69d;
+    font-weight: 500;
+    color: #a28aee;
 }
 #ky1-hdr .hdr-rgt {
     display: flex;
@@ -120,12 +120,11 @@ body {
     margin-top: 1rem;
 }
 #ky1-lst .lst-dat li {
-    background-color: #212525;
+    background-color: #f0f0f0;
     padding: 0.75rem 1.25rem;
     display: flex;
     justify-content: space-between;
     border-radius: 0.5rem;
-    border-left: 0.25rem solid #31d69d;
 }
 #ky1-lst .lst-dat li.lst-clr {
     text-align: center;
@@ -148,7 +147,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 0.5rem;
-    background-color: #141918;
+    background-color: #a28aee;
     border-radius: 2rem;
     height: 2.5rem;
     width: 2.5rem;
@@ -190,7 +189,7 @@ body {
     right: 1rem;
 }
 #ky1-add-frm .frm-cnt {
-    background-color: #141918;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
@@ -204,8 +203,8 @@ body {
 #ky1-add-frm .frm-box.box-mdl {
     margin: 1.5rem 0;
     padding: 1.5rem 0;
-    border-top: dashed 1px #555;
-    border-bottom: dashed 1px #555;
+    border-top: solid 1px #cecece;
+    border-bottom: solid 1px #cecece;
 }
 #ky1-add-frm .frm-box h2 {
     margin: 0;
@@ -224,7 +223,7 @@ body {
     justify-content: center;
 }
 #ky1-add-frm .frm-box li {
-    background-color: #212525;
+    background-color: #f0f0f0;
     text-align: center;
     padding: 0.75rem 0;
     width: 3.5rem;
@@ -237,7 +236,7 @@ body {
     transition: 0.2s all ease-in-out;
 }
 #ky1-add-frm .frm-box li.sel-act {
-    background-color: #31d69d;
+    background-color: #a28aee;
     color: #212525;
 }
 #ky1-add-frm .frm-box li.sel-act span {
@@ -250,7 +249,7 @@ body {
 }
 #ky1-add-frm .box-fnl {
     margin-top: 1.5rem;
-    border-top: dashed 1px #555;
+    border-top: solid 1px #cecece;
     padding-top: 1.5rem;
     justify-content: space-between;
     align-items: center;
@@ -273,7 +272,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #212525;
+    background-color: #dedede;
     border-radius: 2rem;
     font-size: 1rem;
     opacity: 0.75;
@@ -281,7 +280,7 @@ body {
 }
 #ky1-add-frm .box-fnl h3.ky1-act {
     opacity: 1;
-    background-color: #31d69d;
+    background-color: #a28aee;
     color: #212525;
 }
 #ky1-add-frm .box-fnl h2 {
@@ -305,7 +304,7 @@ body {
 }
 #ky1-add-frm .box-fnl {
     margin-top: 1.5rem;
-    border-top: dashed 1px #555;
+    border-top: solid 1px #cecece;
     padding-top: 1.5rem;
     justify-content: space-between;
     align-items: center;
@@ -321,7 +320,7 @@ body {
     padding: 1rem;
 }
 #ky1-err {
-    color: #31d69d;
+    color: #a28aee;
     font-weight: 600;
 }
 .ky1-blr {
@@ -329,48 +328,85 @@ body {
 }
 
 
+
+
+
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar-header span {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.calendar-header .buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+.calendar-header button {
+    border: none;
+    background-color: white;
+    padding: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.calendar-header button svg.flip {
+    transform: rotate(180deg);
+}
+
 .day-selector {
     display: flex;
     justify-content: center;
     overflow: hidden;
     width: 100%;
     position: relative;
-  }
-  
-  .days-container {
+}
+.days-container {
     display: flex;
     gap: 10px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     padding: 10px 0;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
-  }
-  
-  .days-container::-webkit-scrollbar {
-    display: none; /* WebKit */
-  }
-  
-  .day-item {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.days-container::-webkit-scrollbar {
+    display: none;
+}
+.day-item {
     flex: 0 0 auto;
     width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
     border-radius: 5px;
     scroll-snap-align: center;
     cursor: pointer;
-  }
-  
-  .day-item.selected {
-    background-color: #007bff;
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 0.25rem;
+}
+.day-item .day-name {
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+.day-item .day-day {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+.day-item .day-day.selected {
+    background-color: #a28aee;
     color: white;
-  }
-  
-  /* Espacio adicional al inicio y final para centrar los días */
-  .day-placeholder {
-    flex: 0 0 calc(50% - 25px); /* Ajuste según el ancho de los elementos día */
+}
+.day-placeholder {
+    flex: 0 0 calc(50% - 25px);
     height: 50px;
-  }
+}
