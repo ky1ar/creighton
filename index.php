@@ -2,56 +2,57 @@
 require_once 'db.php';
 
 $frase = [
-    'Fe en Dios, luz infinita.',
-    'Oración: puente hacia el cielo.',
-    'Jesús, guía mi sendero siempre.',
-    'Amor divino, fuerza eterna.',
-    'Espíritu Santo, paz interior constante.',
-    'María, madre tierna y fiel.',
-    'Cruz, símbolo de redención eterna.',
-    'Misericordia de Dios, siempre presente.',
-    'Devoción a Cristo, camino seguro.',
-    'Amor de Dios, gracia insondable.',
-    'Palabra de Dios, sabiduría eterna.',
-    'Espíritu Santo, fuego transformador.',
-    'Bendiciones divinas, regalos diarios.',
-    'Esperanza en Dios, fuerza renovadora.',
-    'María, ejemplo de humildad infinita.',
-    'Fe en Dios, fortaleza inexpugnable.',
-    'Misericordia divina, luz perpetua.',
-    'Jesús, amor que sana todo.',
-    'Cruz de Cristo, amor redentor.',
-    'María, estrella que guía siempre.',
-    'Fe firme, raíz de esperanza.',
-    'Espíritu Santo, consuelo fiel.',
-    'Cristo vive, fuente de vida.',
-    'María, consuelo en la adversidad.',
-    'Dios provee, confía siempre en Él.',
-    'Jesús, Salvador de nuestras almas.',
-    'Cruz gloriosa, signo de amor.',
-    'Misericordia divina, amor inagotable.',
-    'Oración constante, paz en todo.',
-    'María, madre amorosa y compasiva.',
-    'Fe en Dios, certeza inquebrantable.',
-    'Espíritu Santo, sabiduría divina.',
-    'Cristo vive en nosotros siempre.',
-    'María, intercesora ante Dios fiel.',
-    'Confianza en Dios, camino seguro.',
-    'Amor divino, cura y transforma.',
-    'Cruz redentora, símbolo de esperanza.',
-    'Misericordia eterna, regalo divino.',
-    'Oración sincera, comunión con Dios.',
-    'María, modelo de amor maternal.',
-    'Fe en Dios, fuerza invencible siempre.',
-    'Espíritu Santo, consuelo en tribulación.',
-    'Cristo, camino, verdad y vida.',
-    'María, amor que nunca falla.',
-    'Confianza en Dios, paz interior perpetua.',
-    'Amor divino, gracia infinita siempre.',
-    'Cruz de amor, victoria segura.',
-    'Misericordia divina, luz que guía.',
-    'Oración humilde, corazón transformado.',
-    'María, ejemplo de fe inquebrantable.'
+    'Fe en el Sagrado Corazón de Jesús, luz infinita.',
+    'Oración al Sagrado Corazón, puente hacia el cielo.',
+    'Jesús, guía mi sendero con tu Sagrado Corazón.',
+    'Amor divino del Sagrado Corazón, fuerza eterna.',
+    'Espíritu Santo, paz interior a través del Sagrado Corazón.',
+    'María, madre tierna del Sagrado Corazón.',
+    'Cruz, símbolo de redención en el Sagrado Corazón.',
+    'Misericordia del Sagrado Corazón, siempre presente.',
+    'Devoción al Sagrado Corazón de Cristo, camino seguro.',
+    'Amor del Sagrado Corazón de Jesús, gracia insondable.',
+    'Palabra del Sagrado Corazón, sabiduría eterna.',
+    'Espíritu Santo, fuego transformador del Sagrado Corazón.',
+    'Bendiciones del Sagrado Corazón, regalos diarios.',
+    'Esperanza en el Sagrado Corazón, fuerza renovadora.',
+    'María, ejemplo de humildad del Sagrado Corazón.',
+    'Fe en el Sagrado Corazón, fortaleza inexpugnable.',
+    'Misericordia del Sagrado Corazón, luz perpetua.',
+    'Jesús, amor del Sagrado Corazón que sana todo.',
+    'Cruz del Sagrado Corazón, amor redentor.',
+    'María, estrella que guía hacia el Sagrado Corazón.',
+    'Fe firme en el Sagrado Corazón, raíz de esperanza.',
+    'Espíritu Santo, consuelo fiel del Sagrado Corazón.',
+    'Cristo vive en el Sagrado Corazón, fuente de vida.',
+    'María, consuelo en la adversidad del Sagrado Corazón.',
+    'Dios provee a través del Sagrado Corazón, confía siempre en Él.',
+    'Jesús, Salvador de nuestras almas con el Sagrado Corazón.',
+    'Cruz gloriosa del Sagrado Corazón, signo de amor.',
+    'Misericordia del Sagrado Corazón, amor inagotable.',
+    'Oración constante al Sagrado Corazón, paz en todo.',
+    'María, madre amorosa y compasiva del Sagrado Corazón.',
+    'Fe en el Sagrado Corazón, certeza inquebrantable.',
+    'Espíritu Santo, sabiduría divina del Sagrado Corazón.',
+    'Cristo vive en el Sagrado Corazón, fuente de vida.',
+    'María, intercesora fiel ante el Sagrado Corazón.',
+    'Confianza en el Sagrado Corazón, camino seguro.',
+    'Amor divino del Sagrado Corazón, cura y transforma.',
+    'Cruz redentora del Sagrado Corazón, símbolo de esperanza.',
+    'Misericordia eterna del Sagrado Corazón, regalo divino.',
+    'Oración sincera al Sagrado Corazón, comunión con Dios.',
+    'María, modelo de amor maternal del Sagrado Corazón.',
+    'Fe en el Sagrado Corazón, fuerza invencible siempre.',
+    'Espíritu Santo, consuelo en tribulación del Sagrado Corazón.',
+    'Cristo del Sagrado Corazón, camino, verdad y vida.',
+    'María, amor que nunca falla del Sagrado Corazón.',
+    'Confianza en el Sagrado Corazón, paz interior perpetua.',
+    'Amor divino del Sagrado Corazón, gracia infinita siempre.',
+    'Cruz de amor del Sagrado Corazón, victoria segura.',
+    'Misericordia divina del Sagrado Corazón, luz que guía.',
+    'Oración humilde al Sagrado Corazón, corazón transformado.',
+    'María, ejemplo de fe inquebrantable en el Sagrado Corazón.'
+
 ];
 $rand = $frase[array_rand($frase)];
 
@@ -79,7 +80,7 @@ $rand = $frase[array_rand($frase)];
         <div class="ky1-wrp">
             <div class="hdr-lft">
                 <img src="assets/img/img.jpg" width="40" height="40" alt="ico">
-                
+
                 <div class="hdr-txt">
                     <h1>Leslie Gallegos</h1>
                     <h2><?php echo $rand ?></h2>
@@ -96,10 +97,12 @@ $rand = $frase[array_rand($frase)];
         <div class="ky1-wrp">
             <div id="ky1-ovr"></div>
             <div id="ky1-add"><img src="assets/img/plsb.svg" width="20" height="20" alt="ico"></div>
+            
             <form id="ky1-add-frm" method="post">
                 <div class="frm-cnt"> 
                     <div class="frm-box">
-                        <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Elasticidad</h2> 
+                        <h2><img src="assets/img/ind.svg" width="16" height="16" alt="ico">Elasticidad</h2>
+
                         <ul id="sel-ind">
                             <li><b>0</b><span>Seco</span></li>
                             <li><b>2</b><span>Húmedo</span></li>
@@ -109,6 +112,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>10</b><span>2.5 cm</span></li>
                         </ul>
                     </div>
+
                     <div class="frm-box box-mdl">
                         <h2><img src="assets/img/sen.svg" width="16" height="16" alt="ico">Textura</h2>
                         <ul id="sel-sen">
@@ -116,6 +120,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>P</b><span>Pastoso</span></li>
                         </ul>
                     </div>
+
                     <div class="frm-box">
                         <h2><img src="assets/img/clr.svg" width="16" height="16" alt="ico">Color</h2>
                         <ul id="sel-clr">
@@ -127,6 +132,7 @@ $rand = $frase[array_rand($frase)];
                             <li><b>Y</b><span>Amarillo</span></li>
                         </ul>
                     </div>
+
                     <div class="box-fnl">
                         <div class="fnl-dat">
                             <h2>
