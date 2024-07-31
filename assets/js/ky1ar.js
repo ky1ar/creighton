@@ -263,12 +263,15 @@ $( document ).ready(function() {
     function updateCentralDay() {
         if ($daysContainer[0].scrollWidth <= $daysContainer[0].clientWidth) return;
     
-        let $closestItem = null;
         let closestDistance = Infinity;
+        let $closestItem = null;
+        const containerCenter = $daysContainer.width() / 2 + $daysContainer.offset().left;
     
         $('.day-item').each(function() {
             const rect = this.getBoundingClientRect();
-            const distance = Math.abs(rect.left + rect.width / 2 - $(window).width() / 2);
+            const dayCenter = rect.left + rect.width / 2;
+            const distance = Math.abs(dayCenter - containerCenter);
+    
             if (distance < closestDistance) {
                 closestDistance = distance;
                 $closestItem = $(this);
@@ -278,6 +281,10 @@ $( document ).ready(function() {
         if ($closestItem) {
             $('.day-item.selected').removeClass('selected');
             $closestItem.addClass('selected');
+    
+            // Instead of using scrollIntoView, manually scroll to center
+            const scrollOffset = $closestItem.offset().left - $daysContainer.offset().left - ($daysContainer.width() / 2 - $closestItem.width() / 2);
+            $daysContainer.animate({ scrollLeft: scrollOffset }, 300);
         }
     }
     
