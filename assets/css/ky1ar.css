@@ -390,6 +390,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     gap: 0.25rem;
+    -webkit-tap-highlight-color: transparent;
 }
 .day-item .day-name {
     font-weight: 400;

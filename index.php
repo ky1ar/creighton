@@ -1,5 +1,4 @@
 <?php
-
 require_once 'db.php';
 
 $frase = [
@@ -55,6 +54,7 @@ $frase = [
     'María, ejemplo de fe inquebrantable.'
 ];
 $rand = $frase[array_rand($frase)];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -79,11 +79,13 @@ $rand = $frase[array_rand($frase)];
         <div class="ky1-wrp">
             <div class="hdr-lft">
                 <img src="assets/img/img.jpg" width="40" height="40" alt="ico">
+                
                 <div class="hdr-txt">
                     <h1>Leslie Gallegos</h1>
                     <h2><?php echo $rand ?></h2>
                 </div>
             </div>
+
             <div class="hdr-rgt">
                 <a href="#"><img src="assets/img/cal.svg" width="24" height="24" alt="ico"></a>
             </div>
