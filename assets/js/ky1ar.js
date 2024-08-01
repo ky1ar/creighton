@@ -201,10 +201,6 @@ $( document ).ready(function() {
         const todayMonth = today.getMonth();
         const todayYear = today.getFullYear();
     
-        for (let i = 0; i < firstDay; i++) {
-            //$('<div>').addClass('day-placeholder').appendTo($daysContainer);
-        }
-    
         for (let day = 1; day <= daysInMonth; day++) {
             const dayDate = new Date(year, month, day);
             const dayName = dayDate.toLocaleDateString('es-ES', { weekday: 'short' });
