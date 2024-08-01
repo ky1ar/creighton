@@ -202,7 +202,7 @@ $( document ).ready(function() {
         const todayYear = today.getFullYear();
     
         for (let i = 0; i < firstDay; i++) {
-            $('<div>').addClass('day-placeholder').appendTo($daysContainer);
+            //$('<div>').addClass('day-placeholder').appendTo($daysContainer);
         }
     
         for (let day = 1; day <= daysInMonth; day++) {
