@@ -404,5 +404,5 @@ body {
     color: white;
 }
 .day-placeholder {
-    flex: 0 0 50%;
+    flex: 0 0 50vw;
 }
